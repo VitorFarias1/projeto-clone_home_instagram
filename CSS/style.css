@@ -1,3 +1,5 @@
+/* CONFIGURAÇÕES GERAIS */
+
 * {
     margin: 0;
     padding: 0;
@@ -8,6 +10,8 @@
 body {
     background-color: #fafafa;
 }
+
+/* CONTAINER PRINCIPAL */
 
 .main-container {
     display: flex;
@@ -31,6 +35,8 @@ body {
     max-width: 380px;
 }
 
+/* CONTAINER DO FORMULÁRIO */
+
 .form-container {
     text-align: center;
 }
@@ -47,6 +53,8 @@ body {
     height: 51px;
     margin: 30px auto 12px;
 }
+
+/* LOGIN E REGISTRO */
 
 .login-form {
     margin-bottom: 20px;
@@ -93,4 +101,167 @@ body {
     width: 50px;
     margin-left: -25px;
     font-size: 14px;
+}
+
+/* FACEBOOK LOGIN */
+
+.facebook-login {
+    margin-bottom: 25px;
+}
+
+.facebook-login a {
+    text-decoration: none;
+    color: #385185;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.facebook-login img {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+}
+
+.facebook-login span {
+    font-weight: bold;
+    font-size: 13px;
+    margin-top: 1px ;
+}
+
+/* ESQUECI A SENHA */
+
+.forgot-pass {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    font-size: 12px;
+}
+
+.forgot-pass a {
+    text-decoration: none;
+    color: #373799;
+}
+
+.forgot-pass a:hover {
+    text-decoration: underline;
+}
+
+.register-container {
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+    width: 350px;
+    margin-top: 10px;
+    padding: 25px;
+}
+
+.register-container p {
+    font-size: 14px;
+    color: #262626;
+}
+
+.register-container a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #4a95f6;
+}
+
+.register-container a:hover {
+    text-decoration: underline;
+}
+
+/* CONTAINER DE APLICATIVOS  */
+
+.get-app-container {
+    text-align: center;
+    width: 350px;
+}
+
+.get-app-container p {
+    margin: 20px 0;
+    font-size: 13px;
+}
+
+.get-app-container a {
+    text-decoration: none;
+}
+
+.get-app-container img {
+    width: 136px;
+    height: 40px;
+}
+
+/* RODAPÉ */
+
+footer {
+    text-align: center;
+    width: 1000px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .footer-links {
+    display: flex;
+    list-style: none;
+}
+
+.footer-links li {
+    margin: 10px;
+}
+
+.footer-links a,
+.copyright {
+    text-decoration: none;
+    color: #8e8e8e;
+    font-size: 12px;
+}
+
+.copyright {
+    margin-top: 10px;
+}
+
+/* MEDIA QUERY */
+
+@media (max-width: 768px) {
+    html, body {
+        width: fit-content;
+        height: 100vh
+    }
+}
+
+
+@media (max-width: 458px ) {
+    html, body {
+        background-color: #fff;
+        width: 100%;
+    }
+
+    .banner-container {
+        display: none;
+    }
+
+    .main-container,
+    .form-box {
+        margin-top: 0;
+    }
+
+    .form-container,
+    .form-box,
+    .register-container,
+    .get-app-container {
+        width: 100%;
+        border: none;
+    }
+
+    footer {
+        width: 90%;
+    }
+
+    .footer-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
 }
